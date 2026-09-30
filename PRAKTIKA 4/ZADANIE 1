@@ -1,1 +1,3 @@
-
+import math
+x = float(input())
+print(math.floor(x) + math.ceil(x)) #округляет число вниз и вверх, складываются и выводится ответ
