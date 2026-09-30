@@ -1,4 +1,4 @@
-n = int(input())
+a = int(input())
 k = int(input())
-print(k // n)
-print(k % n)
+print(k // a)
+print(k % a)
