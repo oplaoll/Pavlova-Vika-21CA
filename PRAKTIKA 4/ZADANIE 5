@@ -1,1 +1,4 @@
-
+min = int(input())
+hours = min // 60 #скок полных часов из минут получается
+remaining_min = minutes % 60 #ост. минуты
+print(min, "минуты - это", hours, "час", remaining_min, "минут.")
