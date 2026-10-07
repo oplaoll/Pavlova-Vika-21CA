@@ -3,6 +3,6 @@ dohod = float(input("Введите годовой доход: "))
 summa_naloga = dohod * NALOG
 dohod_after_nalog = dohod - summa_naloga
 
-print(f"Общая сумма дохода: {dohod:,.2f} руб")
-print(f"Сумма налога: {summa_naloga:,.2f} руб")
-print(f"Сумма на руки: {dohod_after_nalog:,.2f} руб")
+print(f"Общая сумма дохода: {dohod:.2f} руб")
+print(f"Сумма налога: {summa_naloga:.2f} руб")
+
