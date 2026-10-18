@@ -1,1 +1,5 @@
-
+stolb_1, str_1, stolb_2, str_2 = map(int, input().split())
+if abs(stolb_1 - stolb_2) == abs(str_1 - str_2):
+    print("YES")
+else:
+    print("NO")
