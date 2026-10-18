@@ -1,4 +1,5 @@
-stolb_1 = int(input("Введите столбец первой клетки: "))
-str_1 = int(input("Введите строку первой клетки: "))
-stolb_2 = int(input("Введите столбец первой клетки: "))
-str_2 = int(input("Введите строку первой клетки: "))
+stolb_1, str_1, stolb_2, str_2 = map(int, input().split())
+if (stolb_1 + str_1) % 2 == (stol_2 + str_2) % 2:
+    print("YES")
+else:
+    print("NO")
