@@ -1,1 +1,13 @@
+B5000 = 5000
+B2000 = 2000
+B1000 = 1000
+B500 = 500
+B200 = 200
+B100 = 100
+summa = int(input("Введите сумму: "))
 
+for kup in (B5000, B2000, B1000, B500, B200, B100):
+    kol = summa // kup
+    summa = summa % kup
+    if kol > 0:
+        print(f"Купюр {kup} руб.: {kol} шт.")
