@@ -1,0 +1,29 @@
+rating = int(input("Введите рейтинг продукта от 1 до 10: "))
+
+match rating:
+    case 9 | 10:
+        rate = "Отличный продукт"
+        emoji = "🤩"
+        recomended = "Настоятельно рекомендую!"
+    case 7 | 8:
+        rate = "Хороший продукт"
+        emoji = "😋"
+        recomended = "Рекомендую!"
+    case 5 | 6:
+        rate = "Средний продукт"
+        emoji = "🤨"
+        recomended = "Можно попробовать"
+    case 3 | 4:
+        rate = "Плохой продукт"
+        emoji = "😵"
+        recomended = "Не рекомендую"
+    case 1 | 2:
+        rate = "Очень плохой продукт"
+        emoji = "🤢"
+        recomended = "Вообще не рекомендую..."
+    case _:
+        rate = "Некорректный рейтинг"
+        emoji = "❓"
+        recomended = "Нет рекомендации"
+
+print(f"{rate}, {emoji}, {recomended}")
