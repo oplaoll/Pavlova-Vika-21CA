@@ -1,1 +1,47 @@
+import random
+status = input("📦 Введите статус заказа " "(pending, processing, shipped, delivered, cancelled): ")
 
+match status:
+    case "pending":
+        status_ru = "В ожидании"
+        opisanie = "Заказ ожидает обработки"
+        emoji = "⏳"
+        time = random.randint(10, 30)
+
+    case "processing":
+        status_ru = "В обработке"
+        opisanie = "Заказ обрабатывается"
+        emoji = "⚙️"
+        time = random.randint(20, 60)
+
+    case "shipped":
+        status_ru = "Отправлен"
+        opisanie = "Заказ отправлен"
+        emoji = "🚚"
+        time = random.randint(30, 120)
+
+    case "delivered":
+        status_ru = "Доставлен"
+        opisanie = "Заказ получен"
+        emoji = "✅"
+        time = 0
+
+    case "cancelled":
+        status_ru = "Отменён"
+        opisanie = "Заказ отменён"
+        emoji = "❌"
+        time = 0
+
+    case _:
+        status_ru = "Ошибка"
+        opisanie = "Такого статуса нет"
+        emoji = "⚠️"
+        time = 0
+
+print("\n" + "=" * 35)
+print("      📦 СТАТУС ЗАКАЗА")
+print("=" * 35)
+print(f"Статус: {status_ru} {emoji}")
+print(f"Описание: {opisanie}")
+print(f"Время ожидания: {time} минут")
+print("=" * 35)
